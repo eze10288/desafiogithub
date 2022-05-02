@@ -1,0 +1,223 @@
+/*INDEX*/
+/*header*/
+body {
+     background-color: rgb(249, 153, 246);
+}  
+
+.logo{
+     display: inline;
+     text-align: left;
+     
+     
+
+}
+.registro {
+     display: inline;
+     text-align: right;
+     
+}
+
+h1 {
+     text-align: center;
+     font-style: italic;
+    font-size: 70px;
+}
+/*header*/
+
+/*nav*/
+ul li {
+     list-style: none;
+}     
+a {
+     text-decoration: none;
+}
+.nave li {
+     display: inline;
+     border: solid 3px #000000; 
+     padding: 1px 70px 1px 70px; 
+}
+
+.navetext {
+     text-align: center;
+     position: sticky;
+     top: 20px;
+    
+}
+/*nav*/
+
+/*seccion*/
+.carrousel {
+     text-align: center;
+     display: block;
+    
+}
+.slogan{
+     text-align: center;
+     padding: 30px 30px 30px 30px;
+     font-size: 40px;
+     font-style: oblique;
+     background-color: #ef49d4;
+}
+.destacados{
+     display: flex;
+     justify-content: space-evenly;
+}
+/*seccion*/
+
+/*footer*/
+h4 {
+     color: #000000;
+     text-decoration: underline;
+     margin-top: 50px;
+}
+
+/*footer*/
+/*INDEX*/
+
+/*UBICACION*/
+.mapa {
+     text-align: center;
+     margin-top: 100px;
+}
+/*UBICACION*/
+
+/*REGISTRO*/
+h3 {
+     text-align: center;
+     border: solid 3px black;
+     padding-left: 200px;
+     padding-right: 200px;
+     margin-top: 60px;
+}
+
+.formulario {
+     text-align: center;
+     font-size: xx-large;
+}
+/*REGISTRO*/
+
+/*PRODUCTOS*/
+.productos1{
+   text-align: center;
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 200px;
+  
+}
+.productos2{
+     text-align: center;
+     display: flex;
+     justify-content: space-evenly;
+     margin-top: 100px;
+
+}
+
+/*PRODUCTOS*/
+
+/*SOBRE MI*/
+.texto{
+     margin-top: 100px;
+}
+
+/*SOBRE MI*/
+
+hr{
+     color: #000000;
+     size: 10px;
+
+}
+.productos1{
+     display: grid;
+     grid-column: 100px;
+     grid-template-columns: 100px;
+     align-items: flex-start;
+}
+
+.productos2 {
+     display: grid;
+     grid-column: 100px;
+     grid-template-columns: 100px;
+     align-items: flex-start;
+}
+aside, .grid {
+     border: solid 2px #000000;
+}
+
+.grid {
+     background-color: aqua;
+     display: grid;
+     grid-template-areas: 
+     "navegrid aside"
+}
+.navegrid {
+     grid-area: navegrid;
+     font-size: 50px;
+     display: flex;
+     padding: 0px;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+}
+.listgrid {
+     padding: 0px;
+     text-align: center;
+}
+.listgrid li {
+     margin: 25px 0;
+}
+aside {
+     grid-area: aside;
+     border: solid 2px black;
+     display: grid;
+     grid-template-areas:
+     "desayuno ajuar"
+     "desayunopremium canastadesayuno"
+}
+.desayuno {
+     grid-area: desayuno;
+     border: solid 2px black;   
+   }
+.ajuar {
+     grid-area: ajuar;
+     border: solid 2px black; 
+}
+.desayunopremium {
+     grid-area: desayunopremium;
+     border: solid 2px black; 
+}
+.canastadesayuno { 
+     grid-area: canastadesayuno;
+     border: solid 2px black; 
+}
+
+@media screen and (max-width: 768px){
+  .grid{
+          display: grid;
+          grid-template-areas: 
+          "navegrid"
+          "aside"
+       }
+       aside {
+          grid-area: aside;
+          border: solid 2px black;
+          display: grid;
+          grid-template-areas:
+          "desayuno" 
+          "ajuar"
+          "desayunopremium"
+          "canastadesayuno"
+     }  
+     .nave li {
+          display: block;
+          border: solid 3px #000000; 
+          padding: 1px 70px 1px 70px; 
+     }
+     
+     .navetext {
+          text-align: center;
+          position: sticky;
+          top: 20px;
+         
+     }
+
+}
