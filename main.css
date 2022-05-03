@@ -6,16 +6,40 @@ body {
 
 .logo{
      display: inline;
-     text-align: left;   
+     text-align: left; 
+     transform: rotate(50deg);  
 }
-.logo:hover {
-     scale: (2);
-} 
+
           
 .registro {
      display: inline;
      text-align: right;
      
+}
+.titulo {
+     animation-name: fade in;
+     animation-iteration-count: 1;
+     animation-timing-function: ease;
+     animation-duration: 2s;
+     animation-delay: .5s;
+
+}
+@keyframes fade-in{
+     0% {
+          transform: translate(800px);
+          opacity: 0;
+          background-color: aqua;
+     }
+     50% {
+          transform: translate(20px);
+          opacity: .5;
+          background-color: blue;
+     }
+     100% {
+          transform: translate(0px);
+          opacity: 1;
+          background-color: #000000;
+     }
 }
 
 h1 {
@@ -58,9 +82,11 @@ a {
      font-size: 40px;
      font-style: oblique;
      background-color: #ef49d4;
+     transition-property: all;
 }
 .slogan:hover {
      scale: (2);
+     
 }
 .destacados{
      display: flex;
@@ -97,6 +123,9 @@ h3 {
 .formulario {
      text-align: center;
      font-size: xx-large;
+}
+.textoregis {
+     transform: perspective(30deg);
 }
 /*REGISTRO*/
 
